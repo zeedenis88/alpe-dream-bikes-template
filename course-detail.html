@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trail Riding Mastery - Alpe d'Huez Biking School</title>
+    <meta name="description" content="Improve your skills on more challenging terrain with our Trail Riding Mastery course at Alpe d'Huez Biking School." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <a href="index.html">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#279DCC"/>
+                <path d="M12 28L20 12L28 28" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="20" cy="18" r="3" fill="white"/>
+              </svg>
+              <div class="logo-text">
+                <div class="logo-title">ALPE D'HUEZ</div>
+                <div class="logo-subtitle">BIKING SCHOOL</div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          
+          <nav class="navbar" id="navbar">
+            <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#" class="active">Courses</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="language-selector">
+                <a href="#" class="language-current"><img src="https://flagcdn.com/16x12/gb.png" alt="English"> EN</a>
+                <div class="language-dropdown">
+                  <a href="#"><img src="https://flagcdn.com/16x12/fr.png" alt="French"> FR</a>
+                  <a href="#"><img src="https://flagcdn.com/16x12/de.png" alt="German"> DE</a>
+                  <a href="#"><img src="https://flagcdn.com/16x12/nl.png" alt="Dutch"> NL</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Course Detail Hero -->
+    <section class="course-hero">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> / <a href="#">Courses</a> / <span>Trail Riding Mastery</span>
+        </div>
+        <div class="course-hero-content">
+          <div class="course-badge intermediate">Intermediate</div>
+          <h1>Trail Riding Mastery</h1>
+          <p>Improve your skills on more challenging terrain with advanced techniques</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Details -->
+    <section class="course-details section-padding">
+      <div class="container">
+        <div class="course-content-wrapper">
+          <div class="course-main-content">
+            <div class="course-gallery">
+              <div class="main-image">
+                <img src="https://images.unsplash.com/photo-1623957894279-4651bcb5dcb4?q=80&w=2670&auto=format&fit=crop" alt="Trail Riding">
+              </div>
+              <div class="thumbnail-images">
+                <img src="https://images.unsplash.com/photo-1605915171147-939469937a43?q=80&w=2574&auto=format&fit=crop" alt="Trail Riding Thumbnail 1" class="active">
+                <img src="https://images.unsplash.com/photo-1627495264994-577946d14a8f?q=80&w=2670&auto=format&fit=crop" alt="Trail Riding Thumbnail 2">
+                <img src="https://images.unsplash.com/photo-1558964367-4d603e0ff3c9?q=80&w=2574&auto=format&fit=crop" alt="Trail Riding Thumbnail 3">
+                <img src="https://images.unsplash.com/photo-1594271216566-719ccc36542d?q=80&w=2671&auto=format&fit=crop" alt="Trail Riding Thumbnail 4">
+              </div>
+            </div>
+
+            <div class="course-tabs">
+              <div class="tabs-header">
+                <button class="tab-button active" data-tab="overview">Overview</button>
+                <button class="tab-button" data-tab="schedule">Schedule</button>
+                <button class="tab-button" data-tab="instructors">Instructors</button>
+                <button class="tab-button" data-tab="location">Location</button>
+              </div>
+
+              <div class="tabs-content">
+                <div class="tab-panel active" id="overview">
+                  <h3>Course Description</h3>
+                  <p>Our Trail Riding Mastery course is designed for intermediate riders who want to take their mountain biking skills to the next level. This intensive 3-day program focuses on technical riding, managing challenging terrain, and improving your overall confidence on the trails.</p>
+                  
+                  <h3>What You'll Learn</h3>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Advanced body positioning for technical climbs and descents</li>
+                    <li><i class="fas fa-check-circle"></i> Cornering techniques for different trail conditions</li>
+                    <li><i class="fas fa-check-circle"></i> Effective braking and speed control strategies</li>
+                    <li><i class="fas fa-check-circle"></i> Navigating rocky, rooty, and steep sections with confidence</li>
+                    <li><i class="fas fa-check-circle"></i> Basic jumping and drop techniques</li>
+                    <li><i class="fas fa-check-circle"></i> Trail reading and line selection skills</li>
+                  </ul>
+
+                  <h3>Requirements</h3>
+                  <p>Participants should have at least one season of mountain biking experience and be comfortable riding blue-graded trails. You should be able to ride continuously for 2-3 hours at a moderate pace. A good level of fitness is recommended for this course.</p>
+
+                  <h3>Equipment Included</h3>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Full-suspension mountain bike</li>
+                    <li><i class="fas fa-check-circle"></i> Helmet and protective gear</li>
+                    <li><i class="fas fa-check-circle"></i> Riding gloves</li>
+                    <li><i class="fas fa-check-circle"></i> Water bottle</li>
+                  </ul>
+
+                  <div class="image-feature">
+                    <img src="https://images.unsplash.com/photo-1526429556246-d75f66d6d6e6?q=80&w=2670&auto=format&fit=crop" alt="Mountain biker on rocky trail">
+                    <p class="image-caption">Learn to navigate challenging terrain with confidence</p>
+                  </div>
+                </div>
+
+                <div class="tab-panel" id="schedule">
+                  <h3>3-Day Course Outline</h3>
+                  
+                  <div class="schedule-day">
+                    <h4>Day 1: Foundations</h4>
+                    <ul class="schedule-list">
+                      <li>
+                        <div class="time">9:00 - 10:00</div>
+                        <div class="activity">
+                          <h5>Welcome & Equipment Setup</h5>
+                          <p>Introduction, safety briefing, and bike adjustments</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="time">10:00 - 12:00</div>
+                        <div class="activity">
+                          <h5>Technical Skills Review</h5>
+                          <p>Assessment riding and fundamental skills practice</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="time">12:00 - 13:00</div>
+                        <div class="activity">
+                          <h5>Lunch Break</h5>
+                          <p>Catered lunch at the trailhead</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="time">13:00 - 16:00</div>
+                        <div class="activity">
+                          <h5>Advanced Body Positioning</h5>
+                          <p>Technique practice on moderate terrain</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="schedule-day">
+                    <h4>Day 2: Technical Riding</h4>
+                    <ul class="schedule-list">
+                      <li>
+                        <div class="time">9:00 - 11:30</div>
+                        <div class="activity">
+                          <h5>Cornering Masterclass</h5>
+                          <p>Advanced turning techniques on various surfaces</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="time">11:30 - 12:30</div>
+                        <div class="activity">
+                          <h5>Lunch Break</h5>
+                          <p>Catered lunch at mountain restaurant</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="time">12:30 - 16:00</div>
+                        <div class="activity">
+                          <h5>Technical Trail Features</h5>
+                          <p>Rocks, roots, and steep sections coaching</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="schedule-day">
+                    <h4>Day 3: Putting It All Together</h4>
+                    <ul class="schedule-list">
+                      <li>
+                        <div class="time">9:00 - 11:00</div>
+                        <div class="activity">
+                          <h5>Flow & Rhythm</h5>
+                          <p>Connecting techniques for trail flow</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="time">11:00 - 12:00</div>
+                        <div class="activity">
+                          <h5>Lunch Break</h5>
+                          <p>Picnic lunch with stunning views</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="time">12:00 - 15:30</div>
+                        <div class="activity">
+                          <h5>Guided Trail Ride</h5>
+                          <p>Applying all skills on an epic alpine trail</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="time">15:30 - 16:00</div>
+                        <div class="activity">
+                          <h5>Wrap-up & Certificates</h5>
+                          <p>Feedback, next steps, and course completion</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="tab-panel" id="instructors">
+                  <h3>Your Expert Guides</h3>
+                  
+                  <div class="instructors-grid">
+                    <div class="instructor-card">
+                      <div class="instructor-image">
+                        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Marc Dubois">
+                      </div>
+                      <h4>Marc Dubois</h4>
+                      <p class="instructor-title">Lead Instructor</p>
+                      <p>Former national downhill champion with 12+ years of coaching experience. Marc specializes in technical riding and has an incredible ability to break down complex skills into manageable steps.</p>
+                    </div>
+                    
+                    <div class="instructor-card">
+                      <div class="instructor-image">
+                        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Sophie Laurent">
+                      </div>
+                      <h4>Sophie Laurent</h4>
+                      <p class="instructor-title">Technical Coach</p>
+                      <p>With a background in enduro racing, Sophie brings deep knowledge of flow and rhythm to her teaching. Her patient approach makes her popular with progression-focused riders.</p>
+                    </div>
+                    
+                    <div class="instructor-card">
+                      <div class="instructor-image">
+                        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Thomas Berg">
+                      </div>
+                      <h4>Thomas Berg</h4>
+                      <p class="instructor-title">Trail Guide</p>
+                      <p>A local legend who knows every trail in Alpe d'Huez like the back of his hand. Thomas will help you apply your new skills on the region's most exciting trails.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-panel" id="location">
+                  <h3>Course Location</h3>
+                  
+                  <div class="location-info">
+                    <div class="location-map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45033.427852299565!2d6.047220549950531!3d45.08931340181645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a18c6581cf791%3A0x3f00f2faa2402184!2s38750%20Alpe%20d&#39;Huez%2C%20France!5e0!3m2!1sen!2sus!4v1654698745620!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    
+                    <div class="location-details">
+                      <div class="location-item">
+                        <div class="location-icon">
+                          <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                          <h4>Meeting Point</h4>
+                          <p>Alpe d'Huez Bike Park Main Office<br>123 Alpine Way, 38750 Alpe d'Huez, France</p>
+                        </div>
+                      </div>
+                      
+                      <div class="location-item">
+                        <div class="location-icon">
+                          <i class="fas fa-mountain"></i>
+                        </div>
+                        <div>
+                          <h4>Training Areas</h4>
+                          <p>The course takes place at various locations around Alpe d'Huez, including the bike park and natural alpine trails. Transportation between locations is provided.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="location-item">
+                        <div class="location-icon">
+                          <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div>
+                          <h4>Facilities</h4>
+                          <p>Changing rooms, bike wash, secure storage, and repair shop are available at the main office.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-sidebar">
+            <div class="course-booking-card">
+              <div class="course-price">
+                <span class="price-from">From</span>
+                <span class="price-amount">€299</span>
+                <span class="price-per">per person</span>
+              </div>
+              
+              <div class="course-highlights">
+                <div class="highlight-item">
+                  <i class="fas fa-clock"></i>
+                  <span>3 Days</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-users"></i>
+                  <span>Max 6 People</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-graduation-cap"></i>
+                  <span>Certificate</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fas fa-language"></i>
+                  <span>EN, FR, DE</span>
+                </div>
+              </div>
+              
+              <div class="booking-dates">
+                <h4>Upcoming Dates</h4>
+                <ul class="dates-list">
+                  <li>
+                    <div class="date-info">
+                      <span class="date">June 15-17, 2023</span>
+                      <span class="availability">2 spots left</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">Book Now</a>
+                  </li>
+                  <li>
+                    <div class="date-info">
+                      <span class="date">July 3-5, 2023</span>
+                      <span class="availability">Available</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">Book Now</a>
+                  </li>
+                  <li>
+                    <div class="date-info">
+                      <span class="date">July 24-26, 2023</span>
+                      <span class="availability">Available</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">Book Now</a>
+                  </li>
+                  <li>
+                    <div class="date-info">
+                      <span class="date">August 10-12, 2023</span>
+                      <span class="availability">Available</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm">Book Now</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="group-discount">
+                <i class="fas fa-users"></i>
+                <p>Group discount available for bookings of 4+ people. Contact us for details.</p>
+              </div>
+              
+              <a href="#" class="btn btn-secondary btn-block">Request Private Course</a>
+            </div>
+            
+            <div class="sidebar-widget">
+              <h4>Need Help?</h4>
+              <p>Our team is ready to answer your questions about this course.</p>
+              <div class="contact-options">
+                <a href="tel:+33476123456" class="contact-link">
+                  <i class="fas fa-phone"></i> +33 (0) 476 123 456
+                </a>
+                <a href="mailto:info@alpedhuezbiking.com" class="contact-link">
+                  <i class="fas fa-envelope"></i> info@alpedhuezbiking.com
+                </a>
+              </div>
+            </div>
+            
+            <div class="sidebar-widget">
+              <h4>Related Courses</h4>
+              <div class="related-courses">
+                <a href="#" class="related-course">
+                  <img src="https://images.unsplash.com/photo-1635164457664-ab041ba81bd9?q=80&w=2670&auto=format&fit=crop" alt="Beginner's Mountain Biking">
+                  <div>
+                    <h5>Beginner's Mountain Biking</h5>
+                    <p>From €199</p>
+                  </div>
+                </a>
+                <a href="#" class="related-course">
+                  <img src="https://images.unsplash.com/photo-1554201218-2216a3746ca4?q=80&w=2670&auto=format&fit=crop" alt="Downhill Performance">
+                  <div>
+                    <h5>Downhill Performance</h5>
+                    <p>From €399</p>
+                  </div>
+                </a>
+                <a href="#" class="related-course">
+                  <img src="https://images.unsplash.com/photo-1506485854521-3e13d857db0b?q=80&w=2670&auto=format&fit=crop" alt="Family Adventures">
+                  <div>
+                    <h5>Family Adventures</h5>
+                    <p>From €249</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Students Say About This Course</h2>
+        </div>
+        
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"I came to improve my cornering and left with so much more. The instructors were incredibly knowledgeable and supportive. The trails they took us on were perfect for practicing our new skills!"</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Michel">
+              <div class="author-info">
+                <h4>Michel D.</h4>
+                <p>from Brussels, Belgium</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"Worth every penny! After years of self-taught riding, this course helped me correct bad habits and discover new techniques. The small group size meant I got plenty of personal attention."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Anna">
+              <div class="author-info">
+                <h4>Anna K.</h4>
+                <p>from Vienna, Austria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Improve Your Mountain Biking Skills?</h2>
+          <p>Book your Trail Riding Mastery course now and take your riding to the next level.</p>
+          <a href="#" class="btn btn-primary btn-lg">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#279DCC"/>
+                <path d="M12 28L20 12L28 28" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="20" cy="18" r="3" fill="white"/>
+              </svg>
+              <div class="logo-text">
+                <div class="logo-title">ALPE D'HUEZ</div>
+                <div class="logo-subtitle">BIKING SCHOOL</div>
+              </div>
+            </div>
+            <p>Providing unforgettable mountain biking experiences in the French Alps since 2005.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Courses</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Courses</h4>
+            <ul class="footer-links">
+              <li><a href="#">Beginner's Mountain Biking</a></li>
+              <li><a href="#">Trail Riding Mastery</a></li>
+              <li><a href="#">Downhill Performance</a></li>
+              <li><a href="#">Family Adventures</a></li>
+              <li><a href="#">Private Lessons</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter for the latest updates and offers.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" required>
+              <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>&copy; 2023 Alpe d'Huez Biking School. All rights reserved.</p>
+          </div>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
