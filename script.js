@@ -17,15 +17,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Course Gallery Thumbnails
+  // Course Gallery Thumbnails - Enhanced version
   const thumbnails = document.querySelectorAll('.thumbnail-images img');
   const mainImage = document.querySelector('.main-image img');
   
   if (thumbnails.length && mainImage) {
+    // Set first thumbnail as active by default
+    if (thumbnails[0] && !document.querySelector('.thumbnail-images img.active')) {
+      thumbnails[0].classList.add('active');
+      mainImage.src = thumbnails[0].src;
+    }
+    
     thumbnails.forEach(thumb => {
       thumb.addEventListener('click', function() {
-        // Update main image
-        mainImage.src = this.src;
+        // Update main image with fade effect
+        mainImage.style.opacity = '0';
+        setTimeout(() => {
+          mainImage.src = this.src;
+          mainImage.style.opacity = '1';
+        }, 300);
         
         // Update active state
         thumbnails.forEach(t => t.classList.remove('active'));
@@ -39,6 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
   const tabPanels = document.querySelectorAll('.tab-panel');
   
   if (tabButtons.length && tabPanels.length) {
+    // Activate first tab by default if none is active
+    if (!document.querySelector('.tab-button.active') && tabButtons[0] && tabPanels[0]) {
+      tabButtons[0].classList.add('active');
+      tabPanels[0].classList.add('active');
+    }
+    
     tabButtons.forEach(button => {
       button.addEventListener('click', function() {
         // Get the tab to show
@@ -95,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Simple animation on scroll
   // This adds a simple fade-in effect to elements as they come into view
   const animateOnScroll = function() {
-    const elements = document.querySelectorAll('.service-card, .course-card, .testimonial-card, .section-header');
+    const elements = document.querySelectorAll('.service-card, .course-card, .testimonial-card, .section-header, .course-feature, .instructor-card');
     
     elements.forEach(element => {
       const elementPosition = element.getBoundingClientRect().top;
@@ -109,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   
   // Set initial state for animation
-  document.querySelectorAll('.service-card, .course-card, .testimonial-card, .section-header').forEach(element => {
+  document.querySelectorAll('.service-card, .course-card, .testimonial-card, .section-header, .course-feature, .instructor-card').forEach(element => {
     element.style.opacity = '0';
     element.style.transform = 'translateY(20px)';
     element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -118,4 +134,26 @@ document.addEventListener('DOMContentLoaded', function() {
   // Run animation on page load and scroll
   animateOnScroll();
   window.addEventListener('scroll', animateOnScroll);
+  
+  // Course date selection
+  const dateOptions = document.querySelectorAll('.date-option');
+  if (dateOptions.length) {
+    dateOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        dateOptions.forEach(opt => opt.classList.remove('selected'));
+        this.classList.add('selected');
+        
+        // Update the selected date display if it exists
+        const selectedDateDisplay = document.getElementById('selectedDate');
+        if (selectedDateDisplay) {
+          selectedDateDisplay.textContent = this.getAttribute('data-date');
+        }
+      });
+    });
+    
+    // Select first date by default
+    if (dateOptions[0] && !document.querySelector('.date-option.selected')) {
+      dateOptions[0].click();
+    }
+  }
 });
